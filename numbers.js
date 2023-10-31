@@ -43,4 +43,4 @@ export const getFullHours = (seconds) => Math.floor(seconds / 60 / 60);
 
 export const getDayOfWeek = (day) => day % 7;
 
-export const countSquares = (a, b, c) => Math.floor((a * b) / (c * c));
+export const countSquares = (a, b, c) => ((a / c) * (Math.floor(b / c)));
