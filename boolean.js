@@ -11,3 +11,7 @@ export const isOdd = (numby) => {
 export const checkInequality = (a, b) => {
     return true ? a > 2 && b <= 3 : false
 }
+
+export const checkInequality2 = (a, b) => {
+    return true ? a >= 0 || b < -2 : false
+}
