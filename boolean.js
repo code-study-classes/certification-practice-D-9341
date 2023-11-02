@@ -15,3 +15,9 @@ export const checkInequality = (a, b) => {
 export const checkInequality2 = (a, b) => {
     return true ? a >= 0 || b < -2 : false
 }
+
+export const checkBetweenNumbers = (a, b, c) => {
+    if (a > b && b > c) return true
+    else if (a < b && b < c) return true
+    else return false
+}
