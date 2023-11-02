@@ -84,5 +84,3 @@ export const encryptSentence = (str) => {
 export const checkBrackets = (str) => {
 
 };
-
-console.log(checkBrackets(''));
