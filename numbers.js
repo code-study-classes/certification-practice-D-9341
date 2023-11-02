@@ -39,7 +39,10 @@ export const getHundredsDigit = (number) => {
   return Math.floor(number / 100) % 10;
 };
 
-export const getFullHours = (seconds) => Math.floor(seconds / 60 / 60);
+export const getFullHours = (seconds) => {
+  if (seconds < 0 || seconds.toString().includes('.')) throw SyntaxError;
+  return Math.floor(seconds / 60 / 60);
+};
 
 export const getDayOfWeek = (day) => day % 7;
 
