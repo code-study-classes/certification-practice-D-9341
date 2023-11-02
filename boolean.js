@@ -27,3 +27,18 @@ export const checkOddThreeDigitNumber = (numby) => {
     else if (numby % 2 !== 0) return true
     else return false
 }
+
+export const checkUniqueDigits = (numby) => {
+    let final = numby.toString().split('')
+
+}
+
+export const isSecondQuadrant = (x, y) => {
+    if (x < 0 && y > 0) return true
+    else return false
+}
+
+export const isIsoscelesTriangle = (a, b, c) => {
+    if ((a === b || b === c || c === a) && !(a === b && b === c && c === a)) return true
+    else return false
+}
