@@ -21,3 +21,9 @@ export const checkBetweenNumbers = (a, b, c) => {
     else if (a < b && b < c) return true
     else return false
 }
+
+export const checkOddThreeDigitNumber = (numby) => {
+    if (numby < 100) return false
+    else if (numby % 2 !== 0) return true
+    else return false
+}
